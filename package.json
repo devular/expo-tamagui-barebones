@@ -1,20 +1,26 @@
 {
   "name": "tamaguirepro",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "./index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
-    "ios": "expo start --ios",
+    "ios": "TAMAGUI_TARGET=native expo start --ios",
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~47.0.8",
+    "@tamagui/babel-plugin": "^1.0.1-beta.226",
+    "@tamagui/config-base": "^1.0.1-beta.226",
+    "@tamagui/core": "^1.0.1-beta.226",
+    "@tamagui/theme-base": "^1.0.1-beta.226",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "expo": "~46",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
-    "react-native-web": "~0.18.9"
+    "react-native-web": "~0.18.9",
+    "tamagui": "^1.0.1-beta.226"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
